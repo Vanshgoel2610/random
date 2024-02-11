@@ -1,0 +1,1060 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat;
+  background-color: #000000;
+  color: #ffff;
+}
+
+nav {
+  background: #000000;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: cornflowerblue;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: cornflowerblue;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+section {
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+h1 {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding: auto;
+  font-size: 5rem;
+}
+
+.sub-text {
+  padding-left: 5%;
+  padding-top: 1%;
+}
+
+.cta {
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: white;
+  background:cornflowerblue;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg)
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #000000;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+.btn1 {
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+  
+.downarrow{
+  font-size: 2rem;
+  font-weight: bolder;
+  position: relative;
+  height: 1vh;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  bottom: 20px;
+  animation: bounce 0.9s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.bgbro{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,
+      rgb(199, 255, 255),
+      rgb(129, 247, 247));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5%;
+}
+.bgbro::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  padding-bottom: 5%;
+}
+.bgchange{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,
+      rgb(199, 255, 255),
+      rgb(185, 247, 247));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5%;
+}
+.bgchange::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  padding-bottom: 5%;
+}
+.spotlight{
+  padding-top: 5%;
+}
+
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.usClients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+
+.ourClients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+
+}
+
+.card-if img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.word {
+  color: #ffff;
+  padding-top: 5%;
+  padding-left: 35%;
+  text-align: center;
+
+}
+
+
+.scrolling-text-container {
+  width: 100%;
+  height: 50px;
+  /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  animation: scrolling 15s linear infinite;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.highlight {
+  color: rgb(8, 218, 255);
+}
+
+@keyframes scrolling {
+  0%{
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.chooseus img {
+  border-width: 5px;
+  border-radius: 8px;
+  border: solid #fff;
+  width: 50vh;
+  margin-left: 5%;
+
+}
+
+.chooseus {
+  width: 100%;
+  padding-top: 5%;
+}
+
+.abc {
+  display: flex;
+}
+
+.write {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  font-size: 1.5rem;
+}
+
+.chooseus h1 {
+  text-align: center;
+}
+
+.crds {
+  display: flex;
+  padding-top: 5%;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10%;
+}
+
+.feed {
+  position: relative;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, .2);
+  transition: all .2s;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.feed:hover {
+  box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+}
+
+.card-client {
+  width: 13rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 7%;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid #00ffff;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #000000;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: hsl(226, 25%, 69%);
+  border-radius: 8px;
+  filter: blur(2px);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(to right,
+      hsl(248, 39%, 39%) 0%,
+      hsl(248, 39%, 49%) 8%,
+      hsl(248, 39%, 39%) 92%,
+      hsl(248, 39%, 29%) 100%);
+}
+
+.front {
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  background: hsl(248, 53%, 58%);
+  padding: 16px 32px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.pushable:hover {
+  filter: brightness(110%);
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.pushable:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.pushable:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.bro {
+  margin-top: 5%;
+  margin-left: 45%;
+}
+
+.cds {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 22%;
+  padding-right: 22%;
+  padding-top: 5%;
+}
+
+.cds2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 4%;
+}
+
+.talk {
+  width: 100%;
+  text-align: center;
+}
+
+.feed img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+footer {
+  margin-top: 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+
+}
+.hme{
+  padding-top: 0%;
+}
+
+.hme ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hme ul li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  gap: 2rem;
+  color: white;
+  padding: 0px 30px;
+  background-color: #000000;
+}
+
+.hme ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+
+}
+
+.follow {
+  width: fit-content;
+  height: fit-content;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  margin: auto;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background: aqua;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #000000;
+  overflow: hidden;
+  color: black;
+}
+
+.card-if {
+  position: relative;
+  width: 130px;
+  height: 120px;
+  background: aqua;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #000000;
+  overflow: hidden;
+  color: black;
+}
+
+.pricing-block-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pricing-plan {
+  color: #05060f;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.price-value {
+  display: flex;
+  color: #05060f;
+  font-size: 1.8rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.pricing-note {
+  opacity: 0.8;
+}
+
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.check-list-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, black, cornflowerblue, black);
+  margin: 20px 0;
+}
+
+/* SpyroSigma : Making changes below for about us page */
+
+
+/* About us page */
+.team {
+  background-color: #000000;
+}
+
+.img5 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-size: 4rem;
+  font-weight: bolder;
+  font-family: sans-serif;
+  -webkit-text-stroke: 2px #000000;
+  text-shadow: 7px 7px 0px #000000;
+  background-color:transparent;
+}
+
+.gems {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,
+      rgb(125, 255, 255),
+      rgb(185, 247, 247));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.gems::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.mem1,
+.mem2,
+.mem3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  
+}
+
+.mem1 img,
+.mem2 img,
+.mem3 img {
+  width: auto;
+  height: 12rem;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px 0px white;
+
+}
+.cards {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.card{
+  text-align: center;
+}
+
+.nice {
+  background: aqua;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em white;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.nice:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em white;
+}
+
+.nice:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em white;
+}
+
+
+/* SpyroSigma : Making changes below for Careers page */
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;  
+}
+.form1{
+  border-radius: 10px;
+  text-align: left;
+}
+input,select,textarea{
+  color: black;
+  font-size: 1.2rem ;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  box-shadow: 8px 6px 0px 0px #00ffff;
+
+}
+input::placeholder,select::placeholder,textarea::placeholder{
+  color: black;
+  font-size: 1.2rem ;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* spyrosigma: Making changes below for contact us page */
+
+.show{
+  text-align: center;
+  padding: 2%;
+  width: 220px;
+  height: 220px ;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  box-shadow: 8px 6px 0px 0px #ffffff;
+  display: none;
+}
+
+.usecard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 8px 8px 0 aqua, 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin: 20px;
+  padding: 20px;
+  max-width: 400px;
+  border-width: 5px;
+  border: solid #000000;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.comment-text {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #999;
+}
+.user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover; 
+  background-color: #aeaaaa;
+}
+
