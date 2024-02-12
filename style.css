@@ -11,13 +11,19 @@ body {
   font-family: montserrat;
   background-color: #000000;
   color: #ffff;
+  
 }
 
 .main{
     width: 100%;
     height: 100%;
     background: black;
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, rgb(23, 22, 22) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(23, 22, 22) 1px, transparent 1px);
 }
+
 nav {
   background: #000000;
   height: 80px;
