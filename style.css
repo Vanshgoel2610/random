@@ -367,19 +367,23 @@ h1 {
 .chooseus {
   width: 100%;
   padding-top: 5%;
+  position: relative;
 }
 
 .abc {
   display:flex;
+  box-sizing: border-box;
 }
-
+.img1{
+  position: relative;
+}
 .write {
   height: 50vh;
   width: auto;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 0%;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .chooseus h1 {
@@ -1082,7 +1086,7 @@ textarea::placeholder {
   border-radius: 50%;
   width: 100%; 
   height: 90%;
-  margin-left: 5rem;
+  margin-left: 0rem;
   margin-top:0rem;
   color: wheat;
   position:absolute ;
