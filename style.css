@@ -19,6 +19,9 @@ body {
   height: 100%;
   background: linear-gradient(to bottom,rgba(0, 0, 255, 0.096), black) transparent;
 }
+.main h1{
+  font-size: 4rem;
+}
 
 .gridlines {
   border-radius: 50%;
@@ -339,8 +342,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 
@@ -649,8 +652,16 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 22%;
-  padding-right: 22%;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-top: 5%;
+}
+.cds1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 5%;
 }
 
@@ -658,8 +669,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 35%;
-  padding-right: 35%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   padding-top: 4%;
 }
 
@@ -796,7 +807,8 @@ footer {
   position: relative;
   width: 250px;
   height: 320px;
-  background: aqua;
+  /* background: aqua; */
+  background: #28CBFF;
   padding: 1rem;
   border-radius: 1rem;
   border: 0.5vmin solid #05060f;
@@ -809,7 +821,7 @@ footer {
   position: relative;
   width: 130px;
   height: 120px;
-  background: aqua;
+  background: #28CBFF;
   padding: 1rem;
   border-radius: 1rem;
   border: 0.5vmin solid #05060f;
@@ -968,7 +980,8 @@ hr {
 }
 
 .nice {
-  background: aqua;
+  /* background: aqua; */
+  background: #28CBFF;
   font-family: inherit;
   padding: 0.6em 1.3em;
   font-weight: 900;
