@@ -387,6 +387,7 @@ h1 {
 .crds {
   display: flex;
   padding-top: 1%;
+  gap:1.5rem;
   align-items:start;
   padding-bottom: 0%;
 }
@@ -767,22 +768,21 @@ footer {
   color: black;
 }
 
-.crds .card-if{
+.chooseus .abc .write .crds .card-if{
   position: relative;
   width: 110px;
   height: 100px;
-  /* background: #28CBFF; */
-  /* padding: 1rem; */
-  border-radius: 1rem;
-  border: 0.5vmin solid #05060f;
-  box-shadow: 0.4rem 0.4rem #000000;
+  background:black;
+  border: 2px black solid;
+  padding: 0rem;
+  border-radius: 0rem;
   overflow: hidden;
   color: black;
 }
 
 .crds .card-if img{
   height: 96px;
-  width: 99px;
+  width: 100px;
 
 }
 
