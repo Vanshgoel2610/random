@@ -288,6 +288,13 @@ h1 {
   padding-right: 15%;
 
 }
+@media screen and (max-width: 1100px) {
+  .next {
+    display:flex;
+    flex-direction: column;
+    gap:75px;
+  }
+}
 
 .usClients {
   display: flex;
@@ -307,6 +314,43 @@ h1 {
   padding-bottom: 5%;
 
 }
+/* vANSH GOEL*/
+@media screen and (max-width: 1100px) {              
+  .card-if img .hide {
+    display: none;
+  }
+  .card-if img .hide {
+    display: none;
+  }
+}
+.bg2 {
+  position: relative;
+}
+
+
+/* Vansh Goel */
+
+
+/* .hidden1 {                                         
+  background-color: linear-gradient(45deg,
+  rgb(199, 255, 255),
+  rgb(129, 247, 247));
+  width: 23vw;
+  height: 18vw;
+  position: absolute;
+  bottom: 0px;
+}
+.hidden2 {
+  background-color: linear-gradient(45deg,
+  rgb(199, 255, 255),
+  rgb(129, 247, 247));
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  transform: translateX(130%);
+  width: 51vw;
+  height: 18vw;
+} */
 
 .card-if img {
   position: absolute;
