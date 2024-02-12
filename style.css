@@ -1075,3 +1075,20 @@ textarea::placeholder {
   object-fit: cover;
   background-color: #aeaaaa;
 }
+
+
+/* Grid lines */
+.chooseus .gridlines{
+  border-radius: 50%;
+  width: 100%; 
+  height: 90%;
+  margin-left: 5rem;
+  margin-top:0rem;
+  color: wheat;
+  position:absolute ;
+  z-index: -1;
+  background-size: 60px 60px;
+  background-image:
+  linear-gradient(rgba(46, 46, 46, 0.555) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(66, 66, 66, 0.63) 1px,transparent 1px);
+}
