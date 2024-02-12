@@ -359,9 +359,9 @@ h1 {
   /* border-width: 5px; */
   border-radius: 8px;
   border: solid #fff;
-  width: 60vh;
   margin-left: 5%;
-
+  height: 45vh;
+  width: 27vw;
 }
 
 .chooseus {
@@ -374,6 +374,8 @@ h1 {
 }
 
 .write {
+  height: 50vh;
+  width: auto;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 0%;
